@@ -1,0 +1,119 @@
+/* Importando uma fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+body {
+    background: url(https://img.freepik.com/fotos-gratis/fundo-colorido-desfocado-vivido_58702-2655.jpg);
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container do formulário */
+#login {
+    background-color: #ffffff;
+    padding: 50px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 360px;
+    text-align: center;  
+}
+
+
+h2 {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Estilos do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+form label {
+    font-size: 0.9rem;
+    color: #555555;
+    text-align: left;
+    width: 100%;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="email"]:hover,
+form input[type="password"]:hover {
+    border-color: #ae88b8;
+}
+
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    border-color: #5b81aa;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #9bbad4;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.1s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+form button:hover {
+    background-color: #748292;
+    transform: translateY(-2px);
+}
+
+form button:active {
+    transform: translateY(1px);
+}
+
+/* Feedback de erro */
+form input[type="email"].error,
+form input[type="password"].error {
+    border-color: #ff4d4d;
+}
+
+.error-message {
+    font-size: 0.8rem;
+    color: #ff4d4d;
+    text-align: left;
+    width: 100%;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+    #login {
+        padding: 30px 20px;
+        max-width: 90%;
+    }
+}
+
+
+
+
